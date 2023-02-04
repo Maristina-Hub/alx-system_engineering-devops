@@ -1,4 +1,2 @@
-#!/usr/bin/env bash
-# Listens on port 98 on localhost.
-
-nc -l localhost 98
+#!/usr/bin/env ruby
+puts ARGV[0].scan(/\[from:(.*?)\] \[to:(.*?)\] \[flags:(.*?)\]/).join(",")
